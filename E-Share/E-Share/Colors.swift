@@ -17,4 +17,8 @@ extension UIColor{
     class func loginButtonColor() -> UIColor {
         return UIColor(red: 11/255, green: 135/255, blue: 248/255, alpha: 1)
     }
+    
+    class func registerLabelColor() -> UIColor {
+        return UIColor(red: 11/255, green: 135/255, blue: 248/255, alpha: 1)
+    }
 }

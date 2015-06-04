@@ -15,7 +15,7 @@ class LoginBackView: UIView {
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
         
-        let lineWidth: CGFloat = 2
+        let lineWidth: CGFloat = 1.5
         
         let width = self.bounds.width - 2*lineWidth
         let height = self.bounds.height - 2*lineWidth
@@ -31,7 +31,7 @@ class LoginBackView: UIView {
         let middleLinePath = UIBezierPath()
         middleLinePath.lineWidth = lineWidth
         middleLinePath.moveToPoint(CGPointMake(lineWidth, 1/2*(height+lineWidth)))
-        middleLinePath.addLineToPoint(CGPointMake(width+lineWidth, 1/2*(height+lineWidth)))
+        middleLinePath.addLineToPoint(CGPointMake(width + lineWidth, 1/2*(height+lineWidth)))
         middleLinePath.stroke()
     }
 

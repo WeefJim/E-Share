@@ -15,6 +15,7 @@
 		0F4287621B1F4B6900A981F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4287611B1F4B6900A981F4 /* LoginViewController.swift */; };
 		0F9A51041B1FDA1B00324E5A /* LoginBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A51031B1FDA1B00324E5A /* LoginBackView.swift */; };
 		0F9A51061B1FE44F00324E5A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A51051B1FE44F00324E5A /* Colors.swift */; };
+		0FDF28E91B20518A00E3397B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF28E81B20518A00E3397B /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		0F4287611B1F4B6900A981F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0F9A51031B1FDA1B00324E5A /* LoginBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBackView.swift; sourceTree = "<group>"; };
 		0F9A51051B1FE44F00324E5A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0FDF28E81B20518A00E3397B /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				0F42873C1B1F488100A981F4 /* AppDelegate.swift */,
-				0F4287611B1F4B6900A981F4 /* LoginViewController.swift */,
-				0F9A51031B1FDA1B00324E5A /* LoginBackView.swift */,
+				0F63C0361B203FE8007DA7E9 /* Views */,
+				0F63C0351B203FD7007DA7E9 /* Controllers */,
+				0F63C0341B203E47007DA7E9 /* Attributes */,
 				0F42873A1B1F488100A981F4 /* Supporting Files */,
-				0F9A51051B1FE44F00324E5A /* Colors.swift */,
 			);
 			path = "E-Share";
 			sourceTree = "<group>";
@@ -116,6 +118,31 @@
 				0F4287541B1F488100A981F4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F63C0341B203E47007DA7E9 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A51051B1FE44F00324E5A /* Colors.swift */,
+			);
+			name = Attributes;
+			sourceTree = "<group>";
+		};
+		0F63C0351B203FD7007DA7E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F4287611B1F4B6900A981F4 /* LoginViewController.swift */,
+				0FDF28E81B20518A00E3397B /* MainTabBarController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0F63C0361B203FE8007DA7E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A51031B1FDA1B00324E5A /* LoginBackView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +246,7 @@
 			files = (
 				0F4287621B1F4B6900A981F4 /* LoginViewController.swift in Sources */,
 				0F9A51061B1FE44F00324E5A /* Colors.swift in Sources */,
+				0FDF28E91B20518A00E3397B /* MainTabBarController.swift in Sources */,
 				0F42873D1B1F488100A981F4 /* AppDelegate.swift in Sources */,
 				0F4287401B1F488100A981F4 /* E_Share.xcdatamodeld in Sources */,
 				0F9A51041B1FDA1B00324E5A /* LoginBackView.swift in Sources */,
