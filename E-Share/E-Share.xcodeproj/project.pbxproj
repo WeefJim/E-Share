@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0F42873D1B1F488100A981F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42873C1B1F488100A981F4 /* AppDelegate.swift */; };
 		0F4287401B1F488100A981F4 /* E_Share.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F42873E1B1F488100A981F4 /* E_Share.xcdatamodeld */; };
-		0F4287421B1F488100A981F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4287411B1F488100A981F4 /* ViewController.swift */; };
-		0F4287451B1F488100A981F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4287431B1F488100A981F4 /* Main.storyboard */; };
 		0F4287471B1F488100A981F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4287461B1F488100A981F4 /* Images.xcassets */; };
 		0F42874A1B1F488100A981F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4287481B1F488100A981F4 /* LaunchScreen.xib */; };
 		0F4287561B1F488100A981F4 /* E_ShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4287551B1F488100A981F4 /* E_ShareTests.swift */; };
+		0F4287621B1F4B6900A981F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4287611B1F4B6900A981F4 /* LoginViewController.swift */; };
+		0F9A51041B1FDA1B00324E5A /* LoginBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A51031B1FDA1B00324E5A /* LoginBackView.swift */; };
+		0F9A51061B1FE44F00324E5A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A51051B1FE44F00324E5A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		0F42873B1B1F488100A981F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F42873C1B1F488100A981F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F42873F1B1F488100A981F4 /* E_Share.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = E_Share.xcdatamodel; sourceTree = "<group>"; };
-		0F4287411B1F488100A981F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F4287441B1F488100A981F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F4287461B1F488100A981F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F4287491B1F488100A981F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0F42874F1B1F488100A981F4 /* E-ShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-ShareTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4287541B1F488100A981F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4287551B1F488100A981F4 /* E_ShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_ShareTests.swift; sourceTree = "<group>"; };
+		0F4287611B1F4B6900A981F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0F9A51031B1FDA1B00324E5A /* LoginBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBackView.swift; sourceTree = "<group>"; };
+		0F9A51051B1FE44F00324E5A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				0F42873C1B1F488100A981F4 /* AppDelegate.swift */,
-				0F4287411B1F488100A981F4 /* ViewController.swift */,
-				0F4287431B1F488100A981F4 /* Main.storyboard */,
-				0F4287461B1F488100A981F4 /* Images.xcassets */,
-				0F4287481B1F488100A981F4 /* LaunchScreen.xib */,
-				0F42873E1B1F488100A981F4 /* E_Share.xcdatamodeld */,
+				0F4287611B1F4B6900A981F4 /* LoginViewController.swift */,
+				0F9A51031B1FDA1B00324E5A /* LoginBackView.swift */,
 				0F42873A1B1F488100A981F4 /* Supporting Files */,
+				0F9A51051B1FE44F00324E5A /* Colors.swift */,
 			);
 			path = "E-Share";
 			sourceTree = "<group>";
@@ -93,6 +93,9 @@
 		0F42873A1B1F488100A981F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F4287461B1F488100A981F4 /* Images.xcassets */,
+				0F4287481B1F488100A981F4 /* LaunchScreen.xib */,
+				0F42873E1B1F488100A981F4 /* E_Share.xcdatamodeld */,
 				0F42873B1B1F488100A981F4 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4287451B1F488100A981F4 /* Main.storyboard in Resources */,
 				0F42874A1B1F488100A981F4 /* LaunchScreen.xib in Resources */,
 				0F4287471B1F488100A981F4 /* Images.xcassets in Resources */,
 			);
@@ -215,9 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4287421B1F488100A981F4 /* ViewController.swift in Sources */,
+				0F4287621B1F4B6900A981F4 /* LoginViewController.swift in Sources */,
+				0F9A51061B1FE44F00324E5A /* Colors.swift in Sources */,
 				0F42873D1B1F488100A981F4 /* AppDelegate.swift in Sources */,
 				0F4287401B1F488100A981F4 /* E_Share.xcdatamodeld in Sources */,
+				0F9A51041B1FDA1B00324E5A /* LoginBackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0F4287431B1F488100A981F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F4287441B1F488100A981F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F4287481B1F488100A981F4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,6 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "E-Share/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "E-Share/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,6 +411,7 @@
 				0F42875B1B1F488100A981F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F42875C1B1F488100A981F4 /* Build configuration list for PBXNativeTarget "E-ShareTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +420,7 @@
 				0F42875E1B1F488100A981F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
