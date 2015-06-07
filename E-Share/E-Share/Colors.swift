@@ -11,10 +11,10 @@ import UIKit
 
 extension UIColor{
     class func lightLineColor() -> UIColor {
-        return UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 0.8)
+        return UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 0.6)
     }
     
-    class func loginButtonColor() -> UIColor {
+    class func themeBlueColor() -> UIColor {
         return UIColor(red: 11/255, green: 135/255, blue: 248/255, alpha: 1)
     }
     

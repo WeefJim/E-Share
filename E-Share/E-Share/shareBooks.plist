@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>bookAuthor</key>
+		<string>David</string>
+		<key>bookCover</key>
+		<string>books_ios8</string>
+		<key>bookName</key>
+		<string>iOS8.0</string>
+		<key>bookPublisher</key>
+		<string>New Time Publisher</string>
+		<key>bookSharer</key>
+		<string>LiMing</string>
+	</dict>
+	<dict>
+		<key>bookAuthor</key>
+		<string>ShuaLi</string>
+		<key>bookCover</key>
+		<string>books_beat</string>
+		<key>bookName</key>
+		<string>Beat Games</string>
+		<key>bookPublisher</key>
+		<string>Tecents Publisher</string>
+		<key>bookSharer</key>
+		<string>DaWing</string>
+	</dict>
+	<dict>
+		<key>bookAuthor</key>
+		<string>Mr. Wang</string>
+		<key>bookCover</key>
+		<string>books_game</string>
+		<key>bookName</key>
+		<string>Space Game</string>
+		<key>bookPublisher</key>
+		<string>Huge Publisher</string>
+		<key>bookSharer</key>
+		<string>Alice</string>
+	</dict>
+	<dict>
+		<key>bookAuthor</key>
+		<string>Lily</string>
+		<key>bookCover</key>
+		<string>books_swift</string>
+		<key>bookName</key>
+		<string>Swift</string>
+		<key>bookPublisher</key>
+		<string>Apple Publisher</string>
+		<key>bookSharer</key>
+		<string>Microsoft</string>
+	</dict>
+	<dict>
+		<key>bookAuthor</key>
+		<string>Filier</string>
+		<key>bookCover</key>
+		<string>books_game</string>
+		<key>bookName</key>
+		<string>iOS Games</string>
+		<key>bookPublisher</key>
+		<string>Game Pulisher</string>
+		<key>bookSharer</key>
+		<string>Gamer</string>
+	</dict>
+</array>
+</plist>

@@ -79,7 +79,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.setTitleColor(UIColor.lightTextColor(), forState: .Disabled)
         loginButton.titleLabel?.font = UIFont.systemFontOfSize(18)
         loginButton.layer.cornerRadius = 5
-        loginButton.backgroundColor = UIColor.loginButtonColor()
+        loginButton.backgroundColor = UIColor.themeBlueColor()
         loginButton.enabled = false
         loginButton.addTarget(self, action: "loginButtonDidTap", forControlEvents: .TouchUpInside)
         loginButton.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -89,7 +89,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // 用户注册label
         let registerLabel = UILabel()
         registerLabel.text = "用户注册"
-        registerLabel.textColor = UIColor.loginButtonColor()
+        registerLabel.textColor = UIColor.themeBlueColor()
         registerLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "registerLabelDidTap"))
         registerLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         registerLabel.userInteractionEnabled = true
@@ -97,14 +97,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         // 中间分割线
         let splitLine = UIView()
-        splitLine.backgroundColor = UIColor.loginButtonColor()
+        splitLine.backgroundColor = UIColor.themeBlueColor()
         splitLine.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.view.addSubview(splitLine)
         
         // 忘记密码label
         let forgetLabel = UILabel()
         forgetLabel.text = "忘记密码"
-        forgetLabel.textColor = UIColor.loginButtonColor()
+        forgetLabel.textColor = UIColor.themeBlueColor()
         forgetLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "forgetLabelDidTap"))
         forgetLabel.userInteractionEnabled = true
         forgetLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -117,7 +117,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.view.addConstraint(NSLayoutConstraint(item: defaultAvatar, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: defaultAvatar, attribute: .Top, relatedBy: .Equal, toItem: self.topLayoutGuide, attribute: .Bottom, multiplier: 1, constant: 20))
         
-        // 登录框
+        // textFieldBackView
         self.view.addConstraint(NSLayoutConstraint(item: textFieldBackView, attribute: .Top, relatedBy: .Equal, toItem: defaultAvatar, attribute: .Bottom, multiplier: 1, constant: 20))
         self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[textFieldBackView]-|", options: nil, metrics: nil, views: ["textFieldBackView": textFieldBackView]))
         textFieldBackView.addConstraint(NSLayoutConstraint(item: textFieldBackView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 100))
@@ -130,14 +130,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         // 账号icon, 账号textfield, 密码icon和textfield
         textFieldBackView.addConstraint(NSLayoutConstraint(item: usernameIcon, attribute: .CenterY, relatedBy: .Equal, toItem: textFieldBackView, attribute: .CenterY, multiplier: 1/2, constant: 0))
+        textFieldBackView.addConstraint(NSLayoutConstraint(item: usernameIcon, attribute: .Width, relatedBy: .Equal, toItem: usernameIcon, attribute: .Height, multiplier: 1, constant: 0))
+        textFieldBackView.addConstraint(NSLayoutConstraint(item: usernameIcon, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 30))
+        
         textFieldBackView.addConstraint(NSLayoutConstraint(item: passwordIcon, attribute: .CenterY, relatedBy: .Equal, toItem: textFieldBackView, attribute: .CenterY, multiplier: 3/2, constant: 0))
+        textFieldBackView.addConstraint(NSLayoutConstraint(item: passwordIcon, attribute: .Width, relatedBy: .Equal, toItem: passwordIcon, attribute: .Height, multiplier: 1, constant: 0))
+        textFieldBackView.addConstraint(NSLayoutConstraint(item: passwordIcon, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 30))
         
-        textFieldBackView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[usernameTextField]-[passwordTextField]-|", options: nil, metrics: nil, views: ["usernameTextField": usernameTextField, "passwordTextField": passwordTextField]))
+        textFieldBackView.addConstraint(NSLayoutConstraint(item: usernameTextField, attribute: .CenterY, relatedBy: .Equal, toItem: usernameIcon, attribute: .CenterY, multiplier: 1, constant: 0))
+        textFieldBackView.addConstraint(NSLayoutConstraint(item: passwordTextField, attribute: .CenterY, relatedBy: .Equal, toItem: passwordIcon, attribute: .CenterY, multiplier: 1, constant: 0))
         
-        textFieldBackView.addConstraint(NSLayoutConstraint(item: usernameTextField, attribute: .Height, relatedBy: .Equal, toItem: passwordTextField, attribute: .Height, multiplier: 1, constant: 0))
         
-        textFieldBackView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-20-[usernameIcon(16)]-[usernameTextField]-|", options: nil, metrics: nil, views: ["usernameIcon": usernameIcon, "usernameTextField": usernameTextField]))
-        textFieldBackView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-20-[passwordIcon(16)]-[passwordTextField]-|", options: nil, metrics: nil, views: ["passwordIcon": passwordIcon, "passwordTextField": passwordTextField]))
+        
+        textFieldBackView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[usernameIcon]-[usernameTextField]-|", options: nil, metrics: nil, views: ["usernameIcon": usernameIcon, "usernameTextField": usernameTextField]))
+        textFieldBackView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[passwordIcon]-[passwordTextField]-|", options: nil, metrics: nil, views: ["passwordIcon": passwordIcon, "passwordTextField": passwordTextField]))
+        
         
         
         // 用户注册，splitLine, 忘记密码
@@ -173,8 +180,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    // MARK: - GestureRecognizer Event
     
+    // MARK: - GestureRecognizer Event
     func registerLabelDidTap(){
         println("register label did tap")
     }
@@ -183,6 +190,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         println("forget label did tap")
     }
     
+    
     // MARK: - Button Event
     func loginButtonDidTap(){
         if let window = self.view.window {
@@ -190,7 +198,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-   
+    
     
     
     

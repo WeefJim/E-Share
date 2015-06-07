@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="BookCrowdFoundTableViewCell" customModule="E_Share" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="iOS8 By Tutorials" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wls-Js-Eo2">
+                        <rect key="frame" x="100" y="8" width="291" height="19"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="752" text="出版社：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kG0-i7-K68">
+                        <rect key="frame" x="100" y="58" width="291" height="15"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="753" text="众筹发起人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei8-ql-e6E">
+                        <rect key="frame" x="100" y="81" width="291" height="15"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" verticalCompressionResistancePriority="754" text="价格：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOG-RI-GDa">
+                        <rect key="frame" x="100" y="104" width="291" height="15"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="js1-Wl-9KO">
+                        <rect key="frame" x="30" y="6" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="作者：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1p-OG-bRt">
+                        <rect key="frame" x="100" y="35" width="291" height="15"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="books_ios8" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-im-BXS">
+                        <rect key="frame" x="8" y="8" width="84" height="111"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2BP-im-BXS" secondAttribute="height" multiplier="3:4" id="P2x-tb-Ff2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2BP-im-BXS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="87f-P3-dkM"/>
+                    <constraint firstItem="kG0-i7-K68" firstAttribute="leading" secondItem="wls-Js-Eo2" secondAttribute="leading" id="92u-TD-y3s"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wls-Js-Eo2" secondAttribute="trailing" id="DTH-6G-suf"/>
+                    <constraint firstItem="wls-Js-Eo2" firstAttribute="leading" secondItem="XOG-RI-GDa" secondAttribute="leading" id="Dlj-nM-Unc"/>
+                    <constraint firstItem="XOG-RI-GDa" firstAttribute="bottom" secondItem="2BP-im-BXS" secondAttribute="bottom" id="Fn0-4y-z2g"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XOG-RI-GDa" secondAttribute="trailing" id="HI3-sK-Pvq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ei8-ql-e6E" secondAttribute="trailing" id="Hp7-s4-5CM"/>
+                    <constraint firstItem="XOG-RI-GDa" firstAttribute="top" secondItem="Ei8-ql-e6E" secondAttribute="bottom" constant="8" symbolic="YES" id="LvM-Kj-WEz"/>
+                    <constraint firstItem="k1p-OG-bRt" firstAttribute="leading" secondItem="wls-Js-Eo2" secondAttribute="leading" id="Olr-w0-sfm"/>
+                    <constraint firstItem="Ei8-ql-e6E" firstAttribute="leading" secondItem="wls-Js-Eo2" secondAttribute="leading" id="OwX-tS-j0u"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XOG-RI-GDa" secondAttribute="bottom" id="QwB-BR-PP8"/>
+                    <constraint firstItem="wls-Js-Eo2" firstAttribute="top" secondItem="2BP-im-BXS" secondAttribute="top" id="Scr-Di-BPL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="k1p-OG-bRt" secondAttribute="trailing" id="U16-sD-Eza"/>
+                    <constraint firstItem="wls-Js-Eo2" firstAttribute="leading" secondItem="2BP-im-BXS" secondAttribute="trailing" constant="8" symbolic="YES" id="bs7-1L-9in"/>
+                    <constraint firstItem="k1p-OG-bRt" firstAttribute="top" secondItem="wls-Js-Eo2" secondAttribute="bottom" constant="8" symbolic="YES" id="g6d-yc-be0"/>
+                    <constraint firstItem="Ei8-ql-e6E" firstAttribute="top" secondItem="kG0-i7-K68" secondAttribute="bottom" constant="8" symbolic="YES" id="hwR-XN-ztB"/>
+                    <constraint firstItem="kG0-i7-K68" firstAttribute="top" secondItem="k1p-OG-bRt" secondAttribute="bottom" constant="8" symbolic="YES" id="nJa-o1-NfH"/>
+                    <constraint firstItem="wls-Js-Eo2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="o6A-fA-pei"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kG0-i7-K68" secondAttribute="trailing" id="wJh-La-bof"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bookAuthorLabel" destination="k1p-OG-bRt" id="cBc-7J-jg0"/>
+                <outlet property="bookCrowdFoundStarterLabel" destination="Ei8-ql-e6E" id="sdh-4u-Vft"/>
+                <outlet property="bookNameLabel" destination="wls-Js-Eo2" id="va3-e6-XuO"/>
+                <outlet property="bookPriceLabel" destination="XOG-RI-GDa" id="LxF-Ai-wc6"/>
+                <outlet property="bookPublisherLabel" destination="kG0-i7-K68" id="5YI-DW-Yrk"/>
+                <outlet property="coverImageView" destination="2BP-im-BXS" id="07p-hY-Fbb"/>
+            </connections>
+            <point key="canvasLocation" x="679.5" y="434"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="books_ios8" width="59" height="75"/>
+    </resources>
+</document>
