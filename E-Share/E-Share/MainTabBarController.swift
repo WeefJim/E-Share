@@ -15,6 +15,10 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // 开启状态栏
+        UIApplication.sharedApplication().statusBarHidden = false
+        
         // 分享平台列表
         let bookShareController = UINavigationController(rootViewController: BookShareTableViewController())
         bookShareController.navigationBar.barTintColor = UIColor.themeBlueColor()

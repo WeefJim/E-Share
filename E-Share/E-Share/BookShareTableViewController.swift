@@ -8,14 +8,16 @@
 
 import UIKit
 
-class BookShareTableViewController: UITableViewController {
+class BookShareTableViewController: ToggleTableViewController {
     
     var shareBooks = [ShareBook]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "分享"
+        // navigation Item
+        self.navigationItem.title = "分享"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: "rightBarButtonDidTap")
         
         // 假数据
         let plistPath = NSBundle.mainBundle().pathForResource("shareBooks", ofType: ".plist")
@@ -26,7 +28,16 @@ class BookShareTableViewController: UITableViewController {
             book.bookAuthor = item.objectForKey("bookAuthor") as? String
             book.bookCover = UIImage(named: item.objectForKey("bookCover") as! String)
             book.bookPublisher = item.objectForKey("bookPublisher") as? String
-            book.bookSharer = item.objectForKey("bookSharer") as? String
+            
+            let shareConfiguration = ShareConfiguration()
+            shareConfiguration.shareId = item.objectForKey("shareId") as? String
+            shareConfiguration.sharer = item.objectForKey("sharer") as? String
+            shareConfiguration.shareDate = item.objectForKey("shareDate") as? NSDate
+            shareConfiguration.shareCount = item.objectForKey("shareCount") as? Int
+            shareConfiguration.downLoadCount = item.objectForKey("downLoadCount") as? Int
+            
+            book.shareConfiguration = shareConfiguration
+            
             shareBooks.append(book)
         }
         
@@ -35,6 +46,7 @@ class BookShareTableViewController: UITableViewController {
         tableView.registerNib(UINib(nibName: "BookShareTableViewCell", bundle: nil), forCellReuseIdentifier: "BookShareCell")
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
+        tableView.tableFooterView = UIView(frame: CGRectZero)
         
     }
 
@@ -43,17 +55,18 @@ class BookShareTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
+
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
+
         return shareBooks.count
     }
 
@@ -62,6 +75,11 @@ class BookShareTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("BookShareCell") as! BookShareTableViewCell
         cell.shareBook = shareBooks[indexPath.row]
         return cell
+    }
+    
+    
+    func rightBarButtonDidTap(){
+        
     }
     
 

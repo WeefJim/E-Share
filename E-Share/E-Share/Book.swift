@@ -13,4 +13,5 @@ class Book: NSObject {
     var bookCover: UIImage?
     var bookAuthor: String?
     var bookPublisher: String?
+
 }

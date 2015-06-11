@@ -17,9 +17,8 @@ class BookCrowdFoundTableViewCell: UITableViewCell {
             bookNameLabel?.text = crowdFoundBook.bookName!
             bookAuthorLabel?.text = "作者：" + crowdFoundBook.bookAuthor!
             bookPublisherLabel?.text = "出版社:" + crowdFoundBook.bookPublisher!
-            bookCrowdFoundStarterLabel?.text = "众筹发起者:" + crowdFoundBook.bookCrowdFounder!
-            bookPriceLabel?.text = "价格：" + "\(crowdFoundBook.bookPrice)"
-
+            maxniumCountLabel?.text = "额定人数:" + "\(crowdFoundBook.crowdFoundConfiguration!.maximunCount!)"
+            averagePriceLabel?.text = "分摊价格：" + (NSString(format: "%.2f", crowdFoundBook.crowdFoundConfiguration!.averagePrice!) as! String)
         }
     }
     
@@ -28,8 +27,8 @@ class BookCrowdFoundTableViewCell: UITableViewCell {
     @IBOutlet weak var bookNameLabel: UILabel!
     @IBOutlet weak var bookAuthorLabel: UILabel!
     @IBOutlet weak var bookPublisherLabel: UILabel!
-    @IBOutlet weak var bookCrowdFoundStarterLabel: UILabel!
-    @IBOutlet weak var bookPriceLabel: UILabel!
+    @IBOutlet weak var maxniumCountLabel: UILabel!
+    @IBOutlet weak var averagePriceLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

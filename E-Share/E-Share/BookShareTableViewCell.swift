@@ -17,8 +17,13 @@ class BookShareTableViewCell: UITableViewCell {
             bookNameLabel?.text = shareBook.bookName!
             bookAuthorLabel?.text = "作者：" + shareBook.bookAuthor!
             bookPublisherLabel?.text = "出版社：" + shareBook.bookPublisher!
-            bookSharerLabel?.text = "分享者：" + shareBook.bookSharer!
             
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "yyyy mm-dd"
+            let dateString = dateFormatter.stringFromDate(shareBook.shareConfiguration!.shareDate!)
+            shareDateLabel?.text = "分享日期：" + dateString
+            
+            downLoadCountLabel?.text = "下载次数：" + "\(shareBook.shareConfiguration!.downLoadCount!)"
         }
     }
     
@@ -27,7 +32,9 @@ class BookShareTableViewCell: UITableViewCell {
     @IBOutlet weak var bookNameLabel: UILabel!
     @IBOutlet weak var bookAuthorLabel: UILabel!
     @IBOutlet weak var bookPublisherLabel: UILabel!
-    @IBOutlet weak var bookSharerLabel: UILabel!
+    @IBOutlet weak var shareDateLabel: UILabel!
+    @IBOutlet weak var downLoadCountLabel: UILabel!
+
     
     
     

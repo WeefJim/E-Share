@@ -27,13 +27,7 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="753" text="众筹发起人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei8-ql-e6E">
-                        <rect key="frame" x="100" y="81" width="291" height="15"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" verticalCompressionResistancePriority="754" text="价格：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOG-RI-GDa">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" verticalCompressionResistancePriority="754" text="分摊价格：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOG-RI-GDa">
                         <rect key="frame" x="100" y="104" width="291" height="15"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -57,6 +51,12 @@
                             <constraint firstAttribute="width" secondItem="2BP-im-BXS" secondAttribute="height" multiplier="3:4" id="P2x-tb-Ff2"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="753" text="额定人数：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei8-ql-e6E">
+                        <rect key="frame" x="100" y="81" width="291" height="15"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="2BP-im-BXS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="87f-P3-dkM"/>
@@ -81,12 +81,12 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="averagePriceLabel" destination="XOG-RI-GDa" id="28V-Oz-7Jr"/>
                 <outlet property="bookAuthorLabel" destination="k1p-OG-bRt" id="cBc-7J-jg0"/>
-                <outlet property="bookCrowdFoundStarterLabel" destination="Ei8-ql-e6E" id="sdh-4u-Vft"/>
                 <outlet property="bookNameLabel" destination="wls-Js-Eo2" id="va3-e6-XuO"/>
-                <outlet property="bookPriceLabel" destination="XOG-RI-GDa" id="LxF-Ai-wc6"/>
                 <outlet property="bookPublisherLabel" destination="kG0-i7-K68" id="5YI-DW-Yrk"/>
                 <outlet property="coverImageView" destination="2BP-im-BXS" id="07p-hY-Fbb"/>
+                <outlet property="maxniumCountLabel" destination="Ei8-ql-e6E" id="gK1-CR-c9q"/>
             </connections>
             <point key="canvasLocation" x="679.5" y="434"/>
         </tableViewCell>

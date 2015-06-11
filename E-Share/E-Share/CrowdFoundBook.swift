@@ -9,7 +9,6 @@
 import Foundation
 
 class CrowdFoundBook: Book {
-    var crowdFoundId: String?
-    var bookCrowdFounder: String?
-    var bookPrice: Float?
+    var crowdFoundConfiguration: CrowFoundConfiguration?
+    
 }

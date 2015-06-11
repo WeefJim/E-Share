@@ -8,15 +8,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="BookShareTableViewCell" customModule="E_Share" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="400" height="117"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="KGk-i7-Jjw" customClass="BookShareTableViewCell" customModule="E_Share" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="133"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="books_game" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-cT-tbs">
-                        <rect key="frame" x="8" y="8" width="75" height="100"/>
+                        <rect key="frame" x="8" y="8" width="87" height="116"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="9ep-DV-IyV"/>
                             <constraint firstAttribute="width" secondItem="BeC-cT-tbs" secondAttribute="height" multiplier="3:4" id="NGq-aV-4Ne"/>
@@ -29,58 +29,92 @@
                             </mask>
                         </variation>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="752" text="出版社：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIa-2I-nid">
-                        <rect key="frame" x="91" y="70" width="301" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="出版社：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIa-2I-nid">
+                        <rect key="frame" x="103" y="63" width="296" height="15"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="分享者：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8Y-9B-jne">
-                        <rect key="frame" x="91" y="93" width="301" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="作者：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFk-iw-IHe">
+                        <rect key="frame" x="103" y="40" width="296" height="15"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="作者：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFk-iw-IHe">
-                        <rect key="frame" x="91" y="47" width="301" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="254" verticalCompressionResistancePriority="754" text="下载次数：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFg-8a-QLH">
+                        <rect key="frame" x="103" y="109" width="296" height="15"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="iOS Games By Tutorials" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCk-Ql-JUu">
-                        <rect key="frame" x="91" y="8" width="301" height="31"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="253" verticalCompressionResistancePriority="753" text="分享日期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZ3-9d-27w">
+                        <rect key="frame" x="103" y="86" width="296" height="15"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="iOS Games By Tutorials" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCk-Ql-JUu">
+                        <rect key="frame" x="103" y="8" width="296" height="24"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="BIa-2I-nid" firstAttribute="trailing" secondItem="DZ3-9d-27w" secondAttribute="trailing" id="0RF-Ss-gB8"/>
                     <constraint firstAttribute="trailingMargin" secondItem="BIa-2I-nid" secondAttribute="trailing" id="6Be-Pq-XPS"/>
-                    <constraint firstItem="v8Y-9B-jne" firstAttribute="leading" secondItem="dCk-Ql-JUu" secondAttribute="leading" id="7g2-GC-pjQ"/>
+                    <constraint firstItem="BeC-cT-tbs" firstAttribute="bottom" secondItem="BIa-2I-nid" secondAttribute="bottom" id="6CY-ag-Qnz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BIa-2I-nid" secondAttribute="bottom" id="73V-EI-Iw3"/>
+                    <constraint firstItem="dCk-Ql-JUu" firstAttribute="trailing" secondItem="TFk-iw-IHe" secondAttribute="trailing" id="AzC-Ka-DId"/>
                     <constraint firstItem="BeC-cT-tbs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="BaP-0X-qAz"/>
                     <constraint firstItem="dCk-Ql-JUu" firstAttribute="top" secondItem="BeC-cT-tbs" secondAttribute="top" id="C7q-28-vhF"/>
-                    <constraint firstItem="v8Y-9B-jne" firstAttribute="bottom" secondItem="BeC-cT-tbs" secondAttribute="bottom" id="Lpg-6h-Pwx"/>
-                    <constraint firstItem="v8Y-9B-jne" firstAttribute="top" secondItem="BIa-2I-nid" secondAttribute="bottom" constant="8" symbolic="YES" id="OvV-ob-ajs"/>
+                    <constraint firstItem="dCk-Ql-JUu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Eik-LX-WRP"/>
+                    <constraint firstItem="dCk-Ql-JUu" firstAttribute="leading" secondItem="TFk-iw-IHe" secondAttribute="leading" id="Ep1-B2-Wr6"/>
+                    <constraint firstItem="BIa-2I-nid" firstAttribute="leading" secondItem="DZ3-9d-27w" secondAttribute="leading" id="G2K-dr-JKK"/>
+                    <constraint firstItem="bFg-8a-QLH" firstAttribute="top" secondItem="DZ3-9d-27w" secondAttribute="bottom" constant="8" symbolic="YES" id="QVX-yw-K6j"/>
                     <constraint firstItem="BIa-2I-nid" firstAttribute="top" secondItem="TFk-iw-IHe" secondAttribute="bottom" constant="8" symbolic="YES" id="R6n-zY-Yxx"/>
                     <constraint firstItem="dCk-Ql-JUu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="RCp-7w-gag"/>
                     <constraint firstItem="TFk-iw-IHe" firstAttribute="top" secondItem="dCk-Ql-JUu" secondAttribute="bottom" constant="8" symbolic="YES" id="VaN-PC-RE3"/>
+                    <constraint firstItem="bFg-8a-QLH" firstAttribute="trailing" secondItem="DZ3-9d-27w" secondAttribute="trailing" id="YaA-1U-eJl"/>
+                    <constraint firstItem="BIa-2I-nid" firstAttribute="leading" secondItem="TFk-iw-IHe" secondAttribute="leading" id="g5s-dG-FO5"/>
                     <constraint firstItem="dCk-Ql-JUu" firstAttribute="leading" secondItem="BeC-cT-tbs" secondAttribute="trailing" constant="8" symbolic="YES" id="gBc-bl-eZO"/>
-                    <constraint firstItem="v8Y-9B-jne" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="gd2-Tu-Uig"/>
+                    <constraint firstItem="bFg-8a-QLH" firstAttribute="bottom" secondItem="BeC-cT-tbs" secondAttribute="bottom" id="gxY-3Q-aod"/>
                     <constraint firstItem="dCk-Ql-JUu" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hE5-Fs-CMJ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="TFk-iw-IHe" secondAttribute="trailing" id="hGu-Jd-geF"/>
+                    <constraint firstItem="dCk-Ql-JUu" firstAttribute="leading" secondItem="BeC-cT-tbs" secondAttribute="trailing" constant="8" symbolic="YES" id="hex-WN-Aag"/>
                     <constraint firstItem="dCk-Ql-JUu" firstAttribute="leading" secondItem="TFk-iw-IHe" secondAttribute="leading" id="hjJ-1A-r26"/>
+                    <constraint firstItem="BIa-2I-nid" firstAttribute="trailing" secondItem="TFk-iw-IHe" secondAttribute="trailing" id="hlU-Ox-R9i"/>
                     <constraint firstItem="BIa-2I-nid" firstAttribute="leading" secondItem="dCk-Ql-JUu" secondAttribute="leading" id="iSP-ON-I9U"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="v8Y-9B-jne" secondAttribute="trailing" id="rCA-lN-DKM"/>
+                    <constraint firstItem="DZ3-9d-27w" firstAttribute="top" secondItem="BIa-2I-nid" secondAttribute="bottom" constant="8" symbolic="YES" id="kSY-WI-qKL"/>
+                    <constraint firstItem="TFk-iw-IHe" firstAttribute="top" secondItem="dCk-Ql-JUu" secondAttribute="bottom" constant="8" symbolic="YES" id="l8y-mW-4Js"/>
+                    <constraint firstItem="bFg-8a-QLH" firstAttribute="leading" secondItem="DZ3-9d-27w" secondAttribute="leading" id="p87-fr-aXy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bFg-8a-QLH" secondAttribute="bottom" id="qHf-iE-eHl"/>
+                    <constraint firstItem="BIa-2I-nid" firstAttribute="top" secondItem="TFk-iw-IHe" secondAttribute="bottom" constant="8" symbolic="YES" id="x5X-Ww-yJN"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6CY-ag-Qnz"/>
+                        <exclude reference="RCp-7w-gag"/>
+                        <exclude reference="gBc-bl-eZO"/>
+                        <exclude reference="hE5-Fs-CMJ"/>
+                        <exclude reference="hjJ-1A-r26"/>
+                        <exclude reference="VaN-PC-RE3"/>
+                        <exclude reference="6Be-Pq-XPS"/>
+                        <exclude reference="73V-EI-Iw3"/>
+                        <exclude reference="R6n-zY-Yxx"/>
+                        <exclude reference="iSP-ON-I9U"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="bookAuthorLabel" destination="TFk-iw-IHe" id="GC0-7M-UJx"/>
                 <outlet property="bookNameLabel" destination="dCk-Ql-JUu" id="Q9H-Kl-Kf0"/>
                 <outlet property="bookPublisherLabel" destination="BIa-2I-nid" id="odK-l8-gxf"/>
-                <outlet property="bookSharerLabel" destination="v8Y-9B-jne" id="Qc8-Mb-2j1"/>
                 <outlet property="coverImageView" destination="BeC-cT-tbs" id="onE-5n-cwq"/>
+                <outlet property="downLoadCountLabel" destination="bFg-8a-QLH" id="kcq-50-u6f"/>
+                <outlet property="shareDateLabel" destination="DZ3-9d-27w" id="YWx-6W-h15"/>
             </connections>
-            <point key="canvasLocation" x="162" y="306.5"/>
+            <point key="canvasLocation" x="165.5" y="326.5"/>
         </tableViewCell>
     </objects>
     <resources>

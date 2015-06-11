@@ -9,6 +9,5 @@
 import Foundation
 
 class ShareBook: Book {
-    var shareId: String?
-    var bookSharer: String?
+    var shareConfiguration: ShareConfiguration?
 }

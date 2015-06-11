@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1ADB8F1B29455E0030CAFB /* JYJDrawerContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1ADB8E1B29455E0030CAFB /* JYJDrawerContainerController.swift */; };
+		0F1ADB911B29461D0030CAFB /* ToggleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1ADB901B29461D0030CAFB /* ToggleTableViewController.swift */; };
 		0F42873D1B1F488100A981F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42873C1B1F488100A981F4 /* AppDelegate.swift */; };
 		0F4287401B1F488100A981F4 /* E_Share.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F42873E1B1F488100A981F4 /* E_Share.xcdatamodeld */; };
 		0F42874A1B1F488100A981F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4287481B1F488100A981F4 /* LaunchScreen.xib */; };
 		0F4287561B1F488100A981F4 /* E_ShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4287551B1F488100A981F4 /* E_ShareTests.swift */; };
 		0F4287621B1F4B6900A981F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4287611B1F4B6900A981F4 /* LoginViewController.swift */; };
+		0F6E48EB1B251EED007D2BDA /* ShareConfigurationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6E48E91B251EED007D2BDA /* ShareConfigurationTableViewCell.swift */; };
+		0F6E48EC1B251EED007D2BDA /* ShareConfigurationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6E48EA1B251EED007D2BDA /* ShareConfigurationTableViewCell.xib */; };
+		0F6E48EE1B2521FA007D2BDA /* ShareConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6E48ED1B2521FA007D2BDA /* ShareConfiguration.swift */; };
+		0F6E48F01B253B7B007D2BDA /* CrowdFoundConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6E48EF1B253B7B007D2BDA /* CrowdFoundConfiguration.swift */; };
 		0F7D445D1B2455EE00E8291E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D445C1B2455EE00E8291E /* Book.swift */; };
 		0F7D445F1B24562500E8291E /* CrowdFoundBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D445E1B24562500E8291E /* CrowdFoundBook.swift */; };
 		0F7D44611B246E6400E8291E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7D44601B246E6400E8291E /* Images.xcassets */; };
@@ -40,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1ADB8E1B29455E0030CAFB /* JYJDrawerContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYJDrawerContainerController.swift; sourceTree = "<group>"; };
+		0F1ADB901B29461D0030CAFB /* ToggleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTableViewController.swift; sourceTree = "<group>"; };
 		0F4287371B1F488100A981F4 /* E-Share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Share.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F42873B1B1F488100A981F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F42873C1B1F488100A981F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		0F4287541B1F488100A981F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4287551B1F488100A981F4 /* E_ShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_ShareTests.swift; sourceTree = "<group>"; };
 		0F4287611B1F4B6900A981F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0F6E48E91B251EED007D2BDA /* ShareConfigurationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareConfigurationTableViewCell.swift; sourceTree = "<group>"; };
+		0F6E48EA1B251EED007D2BDA /* ShareConfigurationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareConfigurationTableViewCell.xib; sourceTree = "<group>"; };
+		0F6E48ED1B2521FA007D2BDA /* ShareConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareConfiguration.swift; sourceTree = "<group>"; };
+		0F6E48EF1B253B7B007D2BDA /* CrowdFoundConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrowdFoundConfiguration.swift; sourceTree = "<group>"; };
 		0F7D445C1B2455EE00E8291E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0F7D445E1B24562500E8291E /* CrowdFoundBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrowdFoundBook.swift; sourceTree = "<group>"; };
 		0F7D44601B246E6400E8291E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -161,6 +173,8 @@
 				0FDF28E81B20518A00E3397B /* MainTabBarController.swift */,
 				0FDF28F11B2077D600E3397B /* BookShareTableViewController.swift */,
 				0F7D44661B24974900E8291E /* BookCrowdFoundTableViewController.swift */,
+				0F1ADB8E1B29455E0030CAFB /* JYJDrawerContainerController.swift */,
+				0F1ADB901B29461D0030CAFB /* ToggleTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +194,8 @@
 				0FDF28ED1B20733F00E3397B /* BookShareTableViewCell.xib */,
 				0FDF28F61B20871800E3397B /* BookCrowdFoundingTableViewCell.swift */,
 				0FDF28F71B20871800E3397B /* BookCrowdFoundTableViewCell.xib */,
+				0F6E48E91B251EED007D2BDA /* ShareConfigurationTableViewCell.swift */,
+				0F6E48EA1B251EED007D2BDA /* ShareConfigurationTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -187,9 +203,11 @@
 		0FDF28F31B2077EC00E3397B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0FDF28F41B20783500E3397B /* ShareBook.swift */,
 				0F7D445C1B2455EE00E8291E /* Book.swift */,
+				0FDF28F41B20783500E3397B /* ShareBook.swift */,
 				0F7D445E1B24562500E8291E /* CrowdFoundBook.swift */,
+				0F6E48ED1B2521FA007D2BDA /* ShareConfiguration.swift */,
+				0F6E48EF1B253B7B007D2BDA /* CrowdFoundConfiguration.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -274,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6E48EC1B251EED007D2BDA /* ShareConfigurationTableViewCell.xib in Resources */,
 				0F42874A1B1F488100A981F4 /* LaunchScreen.xib in Resources */,
 				0F7D44611B246E6400E8291E /* Images.xcassets in Resources */,
 				0F7D44651B2486BE00E8291E /* shareBooks.plist in Resources */,
@@ -298,7 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FDF28F81B20871800E3397B /* BookCrowdFoundingTableViewCell.swift in Sources */,
+				0F1ADB911B29461D0030CAFB /* ToggleTableViewController.swift in Sources */,
 				0F4287621B1F4B6900A981F4 /* LoginViewController.swift in Sources */,
+				0F6E48EB1B251EED007D2BDA /* ShareConfigurationTableViewCell.swift in Sources */,
 				0F7D44671B24974900E8291E /* BookCrowdFoundTableViewController.swift in Sources */,
 				0F9A51061B1FE44F00324E5A /* Colors.swift in Sources */,
 				0F7D445D1B2455EE00E8291E /* Book.swift in Sources */,
@@ -307,9 +328,12 @@
 				0FDF28E91B20518A00E3397B /* MainTabBarController.swift in Sources */,
 				0FDF28EE1B20733F00E3397B /* BookShareTableViewCell.swift in Sources */,
 				0F42873D1B1F488100A981F4 /* AppDelegate.swift in Sources */,
+				0F6E48F01B253B7B007D2BDA /* CrowdFoundConfiguration.swift in Sources */,
 				0F7D445F1B24562500E8291E /* CrowdFoundBook.swift in Sources */,
+				0F6E48EE1B2521FA007D2BDA /* ShareConfiguration.swift in Sources */,
 				0F4287401B1F488100A981F4 /* E_Share.xcdatamodeld in Sources */,
 				0F9A51041B1FDA1B00324E5A /* LoginBackView.swift in Sources */,
+				0F1ADB8F1B29455E0030CAFB /* JYJDrawerContainerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,6 +3,18 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>shareBreif</key>
+		<string>The only way to survive in business today is to be a lean communicator. Busy executives expect you to respect and manage their time more effectively than ever. You need to do the groundwork to make your message tight and to the point. The average professional receives 304 emails per week and checks their smartphones 36 times an hour and 38 hours a week. This inattention has spread to every part of life. The average attention span has shrunk from 12 seconds in 2000 to eight in 2012.</string>
+		<key>downLoadCount</key>
+		<integer>3244</integer>
+		<key>shareCount</key>
+		<integer>28</integer>
+		<key>shareDate</key>
+		<date>2015-06-08T01:17:35Z</date>
+		<key>sharer</key>
+		<string>LiMing</string>
+		<key>shareId</key>
+		<string>ADF9320JKALFJSDF05</string>
 		<key>bookAuthor</key>
 		<string>David</string>
 		<key>bookCover</key>
@@ -11,10 +23,20 @@
 		<string>iOS8.0</string>
 		<key>bookPublisher</key>
 		<string>New Time Publisher</string>
-		<key>bookSharer</key>
-		<string>LiMing</string>
 	</dict>
 	<dict>
+		<key>shareBreif</key>
+		<string>The only way to survive in business today is to be a lean communicator. Busy executives expect you to respect and manage their time more effectively than ever. You need to do the groundwork to make your message tight and to the point. The average professional receives 304 emails per week and checks their smartphones 36 times an hour and 38 hours a week. This inattention has spread to every part of life. The average attention span has shrunk from 12 seconds in 2000 to eight in 2012.</string>
+		<key>shareId</key>
+		<string>MAD32948FJKLG9349</string>
+		<key>shareDate</key>
+		<date>2014-04-07T23:16:05Z</date>
+		<key>sharer</key>
+		<string>DaWing</string>
+		<key>shareCount</key>
+		<integer>35</integer>
+		<key>downLoadCount</key>
+		<integer>2342</integer>
 		<key>bookAuthor</key>
 		<string>ShuaLi</string>
 		<key>bookCover</key>
@@ -23,10 +45,20 @@
 		<string>Beat Games</string>
 		<key>bookPublisher</key>
 		<string>Tecents Publisher</string>
-		<key>bookSharer</key>
-		<string>DaWing</string>
 	</dict>
 	<dict>
+		<key>shareBreif</key>
+		<string>The only way to survive in business today is to be a lean communicator. Busy executives expect you to respect and manage their time more effectively than ever. You need to do the groundwork to make your message tight and to the point. The average professional receives 304 emails per week and checks their smartphones 36 times an hour and 38 hours a week. This inattention has spread to every part of life. The average attention span has shrunk from 12 seconds in 2000 to eight in 2012.</string>
+		<key>shareId</key>
+		<string>ADFAS43543543SDFG</string>
+		<key>shareDate</key>
+		<date>2014-02-07T22:16:05Z</date>
+		<key>sharer</key>
+		<string>Alice</string>
+		<key>shareCount</key>
+		<integer>456</integer>
+		<key>downLoadCount</key>
+		<integer>34534</integer>
 		<key>bookAuthor</key>
 		<string>Mr. Wang</string>
 		<key>bookCover</key>
@@ -35,10 +67,20 @@
 		<string>Space Game</string>
 		<key>bookPublisher</key>
 		<string>Huge Publisher</string>
-		<key>bookSharer</key>
-		<string>Alice</string>
 	</dict>
 	<dict>
+		<key>shareBreif</key>
+		<string>The only way to survive in business today is to be a lean communicator. Busy executives expect you to respect and manage their time more effectively than ever. You need to do the groundwork to make your message tight and to the point. The average professional receives 304 emails per week and checks their smartphones 36 times an hour and 38 hours a week. This inattention has spread to every part of life. The average attention span has shrunk from 12 seconds in 2000 to eight in 2012.</string>
+		<key>downLoadCount</key>
+		<integer>456456</integer>
+		<key>shareCount</key>
+		<integer>7978</integer>
+		<key>sharer</key>
+		<string>Microsoft</string>
+		<key>shareDate</key>
+		<date>2014-04-07T23:16:05Z</date>
+		<key>shareId</key>
+		<string>MAD32948FJKLG9349</string>
 		<key>bookAuthor</key>
 		<string>Lily</string>
 		<key>bookCover</key>
@@ -47,10 +89,20 @@
 		<string>Swift</string>
 		<key>bookPublisher</key>
 		<string>Apple Publisher</string>
-		<key>bookSharer</key>
-		<string>Microsoft</string>
 	</dict>
 	<dict>
+		<key>shareBreif</key>
+		<string>The only way to survive in business today is to be a lean communicator. Busy executives expect you to respect and manage their time more effectively than ever. You need to do the groundwork to make your message tight and to the point. The average professional receives 304 emails per week and checks their smartphones 36 times an hour and 38 hours a week. This inattention has spread to every part of life. The average attention span has shrunk from 12 seconds in 2000 to eight in 2012.</string>
+		<key>downLoadCount</key>
+		<integer>8934297</integer>
+		<key>shareCount</key>
+		<integer>46464</integer>
+		<key>sharer</key>
+		<string>Gamer</string>
+		<key>shareDate</key>
+		<date>2013-12-19T11:36:45Z</date>
+		<key>shareId</key>
+		<string>JKALSDJFK7894357DF</string>
 		<key>bookAuthor</key>
 		<string>Filier</string>
 		<key>bookCover</key>
@@ -59,8 +111,6 @@
 		<string>iOS Games</string>
 		<key>bookPublisher</key>
 		<string>Game Pulisher</string>
-		<key>bookSharer</key>
-		<string>Gamer</string>
 	</dict>
 </array>
 </plist>

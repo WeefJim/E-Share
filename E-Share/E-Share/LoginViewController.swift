@@ -22,10 +22,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 背景颜色
-        self.view.backgroundColor = UIColor.groupTableViewBackgroundColor()
         // 隐藏状态栏
         UIApplication.sharedApplication().statusBarHidden = true
+        
+        // 背景颜色
+        self.view.backgroundColor = UIColor.groupTableViewBackgroundColor()
         
         
         // 默认用户头像
@@ -194,11 +195,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Button Event
     func loginButtonDidTap(){
         if let window = self.view.window {
-            window.rootViewController = MainTabBarController()
+            let leftViewController = UIViewController()
+            leftViewController.view.backgroundColor = UIColor(patternImage: UIImage(named: "leftview_background")!)
+            window.rootViewController = JYJDrawerContainerController(centerViewController: MainTabBarController(), leftViewController: leftViewController)
         }
     }
     
-    
+
     
     
     

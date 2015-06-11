@@ -8,14 +8,16 @@
 
 import UIKit
 
-class BookCrowdFoundTableViewController: UITableViewController {
+class BookCrowdFoundTableViewController: ToggleTableViewController {
     
     var crowdFoundBooks = [CrowdFoundBook]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "众筹"
+        // navigation Item
+        self.navigationItem.title = "众筹"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "发起", style: UIBarButtonItemStyle.Plain, target: self, action: "rightBarButtonDidTap")
         
         // 假数据
         let plistPath = NSBundle.mainBundle().pathForResource("crowdFoundBooks", ofType: ".plist")
@@ -26,8 +28,15 @@ class BookCrowdFoundTableViewController: UITableViewController {
             book.bookAuthor = item.objectForKey("bookAuthor") as? String
             book.bookCover = UIImage(named: item.objectForKey("bookCover") as! String)
             book.bookPublisher = item.objectForKey("bookPublisher") as? String
-            book.bookCrowdFounder = item.objectForKey("bookCrowdFounder") as? String
-            book.bookPrice = item.objectForKey("bookPrice") as? Float
+            
+            let crowdFoundConfiguration = CrowFoundConfiguration()
+            crowdFoundConfiguration.bookPrice = item.objectForKey("bookPrice") as? Float
+            crowdFoundConfiguration.maximunCount = item.objectForKey("maximunCount") as? Int
+            crowdFoundConfiguration.crowdFoundId = item.objectForKey("crowdFoundId") as? String
+            crowdFoundConfiguration.bookCrowdFounder = item.objectForKey("bookCrowdFounder") as? String
+            
+            book.crowdFoundConfiguration = crowdFoundConfiguration
+            
             crowdFoundBooks.append(book)
         }
         
@@ -36,25 +45,24 @@ class BookCrowdFoundTableViewController: UITableViewController {
         tableView.registerNib(UINib(nibName: "BookCrowdFoundTableViewCell", bundle: nil), forCellReuseIdentifier: "BookCrowdFoundCell")
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
-        
+        tableView.tableFooterView = UIView(frame: CGRectZero)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    
     
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
         return crowdFoundBooks.count
     }
     
@@ -64,5 +72,11 @@ class BookCrowdFoundTableViewController: UITableViewController {
         cell.crowdFoundBook = crowdFoundBooks[indexPath.row]
         return cell
     }
+    
+    
+    func rightBarButtonDidTap(){
+        
+    }
+    
 
 }
